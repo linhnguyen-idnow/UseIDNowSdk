@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F95602</color>
+    <color name="colorPrimaryDark">#45A447</color>
+    <color name="colorAccent">#F95602</color>
+    <color name="main_color_button_press">#73F95602</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="border_grey">#A6A6A6</color>
+    <color name="idnow_btn">#328bc4</color>
+</resources>
