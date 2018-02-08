@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/ts_20sp"
+    tools:context="de.idnow.sampleproject.TuanActivity">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/di_50dp"
+        android:src="@drawable/icon_placeholder"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/di_50dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/email_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/di_10dp"
+            android:src="@drawable/icons8"/>
+
+        <EditText
+            android:id="@+id/tuan_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_id"
+            android:maxLength="100"
+            android:padding="@dimen/di_10dp"
+            android:textSize="@dimen/ts_20sp"
+            android:background="@null"
+            android:layout_toRightOf="@id/email_icon"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di_1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tuan_email"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/di_10dp"
+            android:src="@drawable/icons8_password"/>
+
+        <EditText
+            android:id="@+id/tuan_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di_50dp"
+            android:layout_marginTop="@dimen/di_10dp"
+            android:maxLength="100"
+            android:padding="@dimen/di_10dp"
+            android:textSize="@dimen/ts_20sp"
+            android:hint="@string/hint_enter_pass"
+            android:background="@null"
+            android:layout_toRightOf="@id/password_icon" />
+
+        <View
+            android:background="@color/black"
+            android:layout_height="@dimen/di_1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tuan_password"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tuan_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/di_20dp"
+        android:layout_centerInParent="true"
+        android:text="@string/button_tuan"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

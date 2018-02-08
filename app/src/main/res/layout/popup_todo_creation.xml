@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/di_20dp">
+
+        <EditText
+            android:id="@+id/todo_name_adding"
+            android:layout_width="@dimen/di_200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_name_hint"
+            android:maxLength="100"
+            android:padding="@dimen/di_10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/todo_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_date_hint"
+            android:maxLength="100"
+            android:padding="@dimen/di_10dp"
+            android:layout_toRightOf="@id/todo_name_adding"
+            android:layout_marginLeft="@dimen/di_10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/todo_description_adding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/todo_description_hint"
+            android:maxLength="100"
+            android:padding="@dimen/di_10dp"
+            android:layout_marginTop="@dimen/di_50dp"
+            android:textSize="20sp"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/todo_description_adding"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_marginTop="@dimen/di_20dp">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/todo_cancel_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:text="@string/todo_cancel_button" />-->
+                <!--<Button-->
+                    <!--android:id="@+id/todo_add_button"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:text="@string/todo_add_button"-->
+                    <!--android:layout_toRightOf="@id/todo_cancel_button"/>-->
+        <!--</RelativeLayout>-->
+
+</RelativeLayout>
